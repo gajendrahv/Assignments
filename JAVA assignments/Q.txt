@@ -1,0 +1,72 @@
+abstract class Persistence{
+
+abstract void persist();
+}
+
+class FilePersist  extends Persistence{
+
+@Override 
+void persist(){
+sop("File Persist")
+}
+}
+
+class DatabasePersist  extends Persistence{
+
+@Override 
+void persist(){
+sop("DB Persist")
+}
+}
+
+public class Main{
+
+p s v m(){
+Persistence p =new FilePersist();
+p.persist();
+
+p =new DatabasePersist();
+
+
+p.persist();
+
+
+===================================================
+
+abstract class DessertItem{
+
+abstract String getCost(int i);
+}
+
+class Candy extends DessrtItem{
+
+@Override
+String getCost(int i){
+double total=i*60+tax(2%)
+return i+" candys cost is :"+total +"dollars";
+
+
+DessrtItems{
+
+static Array/collection(arraylist) variable 
+
+Array/ArrayList addItem(String item){
+ add into array/arraylist
+3 items add it
+return list/array;
+}
+
+DessrtShop{
+p s v m(){
+DessrtItems items=new DessrtItems();
+
+sop("enter your role owner or customer");
+String role=sc.next();
+if(role.equalsIgnoreCase("owner");
+{
+sop("Enter new item")
+String newitem=sc.next();
+sop(items.addItem(newitem));
+}else{
+sop(Enter option candy/icecream/cookie")
+}

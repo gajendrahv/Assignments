@@ -1,0 +1,259 @@
+import java.util.Scanner;
+public class armstrongno {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+ Scanner sc = new Scanner(System.in);
+ int n = sc.nextInt();
+ int sum =0;
+ int t=n;
+ 
+ do {
+	 int d=n%10;
+	 sum=sum+d*d*d;
+	 n=n/10;
+ }
+ while(n!=0);
+ if(t==sum)
+	 System.out.println("its an armstrong no");
+ else
+	 System.out.println("its not a armstrong no");
+ }
+
+}
+
+
+2)
+
+public class armstrongno1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+for(int i=100;i<=999;i++) {
+ int n=i,t=n;
+ int sum =0;
+ while(n>0) {
+	 int d =n%10;
+	 sum =sum+(d*d*d);
+	 n=n/10;
+ }
+ if(t==sum) {
+	 System.out.println(i+" ");
+ }
+}
+	}
+
+}
+
+
+3)import java.util.Scanner;
+public class array {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+int[] numArray = {5,12,14,6,78,19,1,23,26,35,37,7,86,47};
+Scanner sc = new Scanner(System.in);
+System.out.println("enter the number you have to find");
+int num =sc.nextInt();
+
+boolean isfound =false;
+for(int i:numArray) {
+	if(i==num) {
+		isfound=true;
+		break;
+	}
+}
+if(isfound) {
+	System.out.println(num+" "+"is present");
+}
+else {
+	System.out.println(num+" "+"is not present");
+}
+	}
+
+}
+
+
+4)
+
+public class bubblesort {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+ int[] numArray = {5,12,14,6,78,19,1,23,26,35,37,7,86,47};
+ 
+ System.out.println("array before swapping");
+ for(int i:numArray) {
+	 System.out.println(i+" ");
+ }
+ int n =numArray.length;
+ int temp =0;
+ for(int i=0;i<n;i++) {
+	 for(int j=1;j<(n-1);j++) {
+		 if(numArray[j-1]>numArray[j]) {
+			 temp=numArray[j-1];
+			 numArray[j-1]=numArray[j];
+			 numArray[j]=temp;
+		 }
+	 }
+ }
+ System.out.println();
+ System.out.println("array after swapping");
+ 
+ for(int i :numArray) {
+	 System.out.println(i+" ");
+ }
+	}
+
+}
+
+
+5)
+import java.util.Scanner;
+public class loginpage {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+ String username ="manish";
+ String _name="manish.com";
+ String _password="manish123";
+ 
+ Scanner sc = new Scanner(System.in);
+ 
+ for(int i=1;i<=3;i++) {
+	 System.out.println("enter user name");
+	 String name = sc.next();
+	 System.out.println("enter the password");
+	 String password = sc.next();
+	 
+	 if((_name.equals(name))&&(password.equals(_password))) {
+		 System.out.println("welcome"+" "+username);
+		 break;
+	 }
+	 else {
+		 if(i==3) {
+			 System.out.println("contact admin");
+		 }
+		 else {
+			 System.out.println("sorry try again");
+		 }
+	 }
+	 
+ }
+	}
+
+}
+
+
+6)
+import java.util.Scanner;
+public class marks {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+Scanner sc = new Scanner(System.in);
+System.out.println("enter sub 1 marks");
+int sub1marks = sc.nextInt();
+System.out.println("enter sub 2 marks");
+int sub2marks = sc.nextInt();
+System.out.println("enter sub 3 marks");
+int sub3marks = sc.nextInt();
+
+if((sub1marks>60)&&(sub2marks>60)&&(sub3marks>60)) {
+	System.out.println("student is passed");
+}
+	else if (sub1marks>60&&(sub2marks>60)||(sub1marks>60&&(sub3marks>60))||(sub1marks>60&&(sub2marks>60))){
+		System.out.println("student is promoted");
+	}
+	else {
+		System.out.println("student is failed");
+	}
+}
+	}
+
+
+
+7)
+import java.util.Scanner;
+public class simplencompound {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		System.out.println("enter the principle amount");
+		
+		float pamount = sc.nextFloat();
+		float rate =2;
+		float time = 6;
+		
+		float si = (pamount*rate*time)/100;
+		System.out.println("simple intrest is"+" "+si);
+		
+		float ci = (float)(pamount*Math.pow(1+rate/100, time));
+		System.out.println("compound intrest is"+" "+ci);
+	}
+
+}
+
+8)
+import java.util.Scanner;
+public class student {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		System.out.println("enter student1 marks");
+		int stu1a =sc.nextInt();
+		int stu1b =sc.nextInt();
+		int stu1c =sc.nextInt();
+		
+		System.out.println("enter student2 marks");
+		int stu2a =sc.nextInt();
+		int stu2b =sc.nextInt();
+		int stu2c =sc.nextInt();
+		
+		System.out.println("enter student3 marks");
+		int stu3a =sc.nextInt();
+		int stu3b =sc.nextInt();
+		int stu3c =sc.nextInt();
+		
+		float totalmarks =stu1a+stu1b+stu1c+stu2a+stu2b+stu2c+stu3a+stu3b+stu3c;
+		
+		float avgmarks = totalmarks/9;
+		System.out.println("total marks of all students"+" "+totalmarks);
+		System.out.println("average marks of all student"+" "+avgmarks);
+		System.out.println();
+	}
+
+}
+
+9)
+import java.util.Scanner;
+public class tax {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+Scanner sc = new Scanner(System.in);
+System.out.println("enter the income");
+double income = sc.nextDouble();
+
+if((income>=0 && income<=180000)) {
+	System.out.println("no need to pay tax");
+}
+	else if((income>=180001 && income<=300000)) {
+		double tax = income*0.1;
+		System.out.println("tax is"+" "+tax);	
+	}
+	else if((income>=300001 && income<=500000)) {
+		double tax = income*0.2;
+		System.out.println("tax is"+" "+tax);	
+	}
+	else if((income>=500001 && income<=1000000)) {
+		double tax = income*0.3;
+		System.out.println("tax is"+" "+tax);	
+	}
+sc.close();
+}
+	}
+
+

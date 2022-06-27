@@ -1,0 +1,85 @@
+string 1
+
+public class string1 {
+
+	public static void main(String[] args) 
+	{
+	   String str = "Hello World";
+	   System.out.print(str.length());
+	}
+
+}
+-----------------------------------------------------------------------------------------
+string 2
+
+
+public class string2 
+{
+	public static void main(String[] args)
+	{
+		String part1 = "Hello";
+		String part2 = "How are you";
+		System.out.print(part1.concat(" "+part2));
+	}
+}
+------------------------------------------------------------------------------------------
+string 3
+
+public class string3 {
+
+	public static void main(String[] args)
+	{
+		String str = "Java String pool refers to collection of Strings which are stored in heap memmory";
+		
+      System.out.println(str.toLowerCase());   
+      System.out.println(str.toUpperCase());
+      System.out.println(str.replace("a", "$"));
+      System.out.println(str.contains("collection"));
+      System.out.println(str.equals("java string pool refers to collection of strings which are stored in heap memmory"));
+      System.out.println(str.equalsIgnoreCase("java string pool refers to collection of strings which are stored in heap memmory")); 
+	}
+
+}
+---------------------------------------------------------------------------------------------------------------------------
+string buffer
+
+public class StringBuffer1 {
+
+	public static void main(String[] args)
+	{
+		StringBuffer st = new StringBuffer("String Buffer");
+		st.append("is a peer class of String");
+		st.append("that provides much of");
+		st.append("the functionality of strings");
+		System.out.println(st);
+		
+		StringBuffer st1 = new StringBuffer("it is used to at the specified index position");
+		st1.insert(14, "insert text ");
+		System.out.println(st1);
+	
+		System.out.println(	st1.reverse());
+	}
+
+}
+-----------------------------------------------------------------------------------------------------------------------------
+string bulider
+
+public class StringBulider 
+{
+	public static void main(String[] args) 
+	{
+		StringBuilder st1 = new StringBuilder("String Builder");
+		st1.append("is a peer class of String");
+		st1.append("that provides much of");
+		st1.append("the functionality of strings");
+		System.out.println(st1);
+		
+		StringBuilder st2 = new StringBuilder("it is used to at the specified index position");
+		st2.insert(14, "insert text ");
+		System.out.println(st2);
+	
+		System.out.println(	st2.reverse());
+	}
+
+}
+-----------------------------------------------------------------------------------------------------------------------------

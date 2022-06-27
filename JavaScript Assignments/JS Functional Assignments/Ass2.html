@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+        <title>Assignment2</title>
+    </head>
+    <body>        
+        <script>
+
+var f1 = function compose(x) {
+    function square(x) {
+  return x*x;
+}
+function double(x) {
+  return 2*x;
+}
+  return square(double(x));
+};
+
+console.log(f1(5));
+console.log(f1(10));
+
+var f2 = function compose(x) {
+    function square(x) {
+  return x*x;
+}
+function double(x) {
+  return 2*x;
+}
+  return double(square(x));
+};
+
+console.log(f2(5));
+console.log(f2(10));
+
+        </script>
+    </body>
+</html>

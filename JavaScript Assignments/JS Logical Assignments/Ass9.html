@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JS Ass9</title>
+</head>
+<body>
+    <script>
+        var numbers = [1,2,3];
+var letters = ["a","b","c"];
+var result =  letters.reduce(function(result, field, index) {
+  result[numbers[index]] = field;
+  return result;
+},{})
+console.log(result);
+    </script>
+</body>
+</html>

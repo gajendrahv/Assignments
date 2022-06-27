@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JS Ass13 </title>
+</head>
+<body>
+    <script>
+        console.log("Using For loop:-");
+        const arr = [1, 2, 3];
+        let sum1 = 0, sum2 = 0, sum3 = 0;
+
+        for (let i = 0; i <= arr.length - 1; i++) {
+        console.log(arr[i]);
+        sum1 = sum1 +arr[i];
+        }
+        console.log("sum of array is: "+sum1);
+
+        console.log("Using Do While loop:-");
+        const arr1 = [1, 3, 5];
+        let j = 0;
+        do {
+        console.log(arr1[j]);
+        sum2 = sum2 + arr1[j];
+        j++;
+        } 
+        while (j <= arr1.length - 1)
+        console.log("sum of array is: "+sum2);
+        console.log("Using While loop:-");
+        const arr2 = [2, 4, 6];
+        let k = 0;
+        while (k <= arr2.length - 1) {
+        console.log(arr2[k]);
+        sum3 = sum3+arr2[k];
+        k++
+        }
+        console.log("sum of array is: "+sum3);
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JS Ass18</title>
+</head>
+<body>
+    <script>
+        function translatePigLatin(str) {
+    var firstPostition = findFirstVowelPosition(str);
+    if (firstPostition > 0) {
+        return str.slice(firstPostition) + str.slice(0, firstPostition) + "ay";
+    }else{
+        return str + "way";
+    }    
+}
+function findFirstVowelPosition(str) {
+    for (var i = 0; i < str.length; i++) {
+        if ("aeiou".indexOf(str[i]) !== -1) {
+            return 1;
+        }
+    }
+}
+let pigLatin = translatePigLatin("The quick brown fox");
+console.log(pigLatin)
+    </script>
+</body>
+</html>

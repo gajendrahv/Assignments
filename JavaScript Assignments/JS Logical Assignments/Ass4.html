@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JS Ass4</title>
+</head>
+<body>
+    <p> 
+        <input type="button" value="flip coins" onclick="flipCoins()">
+    </p>
+    <script>
+        function flipCoin(){return Math.random()<.5;}
+        function getNumberOfCoins(){var r=prompt("How many flips?");
+        if(isNaN(r)){
+            alert("Please type a number!");
+            return getNumberOfCoins();
+        }
+        if(!r)r=0;
+        return Math.floor(Number(r));
+    }
+
+    function coinFlip()
+    {
+        var f=getNumberOfCoins();
+        var head=0;
+        var tails=0;
+        for(var i=0;i<f;i++)
+        {
+            flipCoin()?heads++:tails++;
+        }
+        {
+            alert("heads: "+heads+"\ntails:"+tails);
+        }
+    }
+    </script>
+</body>
+</html>
